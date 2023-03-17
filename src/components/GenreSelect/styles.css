@@ -1,0 +1,11 @@
+li {
+  display: inline;
+  padding: 20px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+li.selected {
+  font-weight: bold;
+  border-bottom: solid 2pt #F65261; 
+}

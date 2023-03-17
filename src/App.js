@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Counter from "./components/Counter";
+import { GenreSelect } from "./components/GenreSelect";
+import { Searchbar } from "./components/Searchbar";
 
 function App() {
+  const genres = ["All", "Dcumentary", "Comedy", "Horror", "Crime"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h2>1. Counter</h2>
+        <Counter initial={10}></Counter>
+      </div>
+      <div>
+        <h2>2. Searchbar</h2>
+        <Searchbar initial="Alien" onSearch={console.log}></Searchbar>
+      </div>
+      <div>
+        <h2>3. GenreSelect</h2>
+        <GenreSelect
+          genres={genres}
+          selected={"All"}
+          onSelect={console.log}
+        ></GenreSelect>
+      </div>
     </div>
   );
 }
