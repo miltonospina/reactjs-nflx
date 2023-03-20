@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export function Searchbar({ initial, onSearch }) {
   const [searchTerm, setSearchTerm] = useState(initial);
 
-  const placeholder = "What do you want to watch?";
+  let placeholder = `What do you want to watch? ${searchTerm}`;
 
   const setQuery = (event) => {
     setSearchTerm(event.target.value);
@@ -29,7 +29,7 @@ export function Searchbar({ initial, onSearch }) {
         value={searchTerm}
         onChange={setQuery}
         onKeyDown={handleKeyDown}
-      ></input>
+      />
       <button onClick={search}>Search</button>
     </div>
   );

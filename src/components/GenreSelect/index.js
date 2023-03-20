@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import './styles.css';
 
 export function GenreSelect({ genres, selected, onSelect }) {
-    const [selectedGenre, setSelected] = useState(selected);
+
 
   const select = (choice) => {
-    setSelected(choice);
     onSelect(choice);
   };
   return (
@@ -13,7 +12,7 @@ export function GenreSelect({ genres, selected, onSelect }) {
       {genres.map((genre) => (
         <li
           key={genre}
-          className={genre === selectedGenre ? "selected" : ""}
+          className={genre === selected ? "selected" : ""}
           onClick={() => select(genre)}
         >
           {genre}
