@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Counter extends Component {
-
   constructor(props) {
     super(props);
     this.state = { value: props.initial || 0 };
@@ -17,15 +16,29 @@ class Counter extends Component {
 
   render() {
     return React.createElement(
-      'div',
+      "div",
       null,
-      React.createElement('span', null,
-      'Current value is: [',
-        React.createElement('b',{'data-testid': 'counter'}, this.state.value),
-        '] '
+      React.createElement(
+        "span",
+        null,
+        "Current value is: [",
+        React.createElement(
+          "b",
+          { "data-testid": "counter" },
+          this.state.value
+        ),
+        "] "
       ),
-      React.createElement('button', { onClick: () => this.decrease() }, '(-) Decrease'),
-      React.createElement('button', { onClick: () => this.increase() }, '(+) Increase'),
+      React.createElement(
+        "button",
+        { onClick: () => this.decrease(), "data-testid": "decrease" },
+        "(-) Decrease"
+      ),
+      React.createElement(
+        "button",
+        { onClick: () => this.increase(), "data-testid": "increase" },
+        "(+) Increase"
+      )
     );
   }
 }
