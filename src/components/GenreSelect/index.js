@@ -14,6 +14,7 @@ export function GenreSelect({ genres, selected, onSelect }) {
           key={genre}
           className={genre === selected ? "selected" : ""}
           onClick={() => select(genre)}
+          data-testid="genre"
         >
           {genre}
         </li>

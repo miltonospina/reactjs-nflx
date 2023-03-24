@@ -15,15 +15,15 @@ class Counter extends Component {
     this.setState({ value: this.state.value - 1 });
   }
 
-  get currentValue() {
-    return `Current value is: [ ${this.state.value} ]`;
-  }
-
   render() {
     return React.createElement(
       'div',
       null,
-      React.createElement('span', null, this.currentValue),
+      React.createElement('span', null,
+      'Current value is: [',
+        React.createElement('b',{'data-testid': 'counter'}, this.state.value),
+        '] '
+      ),
       React.createElement('button', { onClick: () => this.decrease() }, '(-) Decrease'),
       React.createElement('button', { onClick: () => this.increase() }, '(+) Increase'),
     );
