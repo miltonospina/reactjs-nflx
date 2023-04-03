@@ -22,3 +22,5 @@ export function GenreSelect({ genres, selected, onSelect }) {
     </ul>
   );
 }
+
+export default GenreSelect;
