@@ -1,32 +1,79 @@
 import "./App.css";
 import React, { useState } from "react";
-import Counter from "./components/Counter";
 import { GenreSelect } from "./components/GenreSelect";
 import { Searchbar } from "./components/Searchbar";
+import MovieExplorer from "./components/MovieExplorer";
+import { SortControl } from "./components/SortControl";
+
+import data from "./data/movies.json";
 
 
 function App() {
   const [selectedGenre, setSelectedGenre] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [orderBy, setOrderBy] = useState("name");
 
-  const genres = ["All", "Dcumentary", "Comedy", "Horror", "Crime"];
+  const genres = [
+    ...new Set(data.reduce((acc, { genres }) => [...acc, ...genres], [])),
+    "All",
+  ];
+
+  const filteredData = data
+    .filter((movie) =>
+      selectedGenre === "All" ? true : movie.genres.includes(selectedGenre)
+    )
+    .filter((movie) =>
+      searchTerm.trim() === ""
+        ? true
+        : movie.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+  const orderedData = filteredData.sort((a, b) => {
+    if (orderBy === "name") {
+      return a.name.localeCompare(b.name);
+    } else if (orderBy === "releaseYear") {
+      return a.releaseYear - b.releaseYear;
+    } else {
+      return 0;
+    }
+  });
+
+  const handleGenreSelect = (genre) => {
+    setSelectedGenre(genre);
+  };
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
+
+  const handleSortChange = (orderBy) => {
+    setOrderBy(orderBy);
+  };
+
   return (
     <div className="App">
-      <div>
-        <h2>1. Counter</h2>
-        <Counter initial={10} />
-      </div>
-      <div>
-        <h2>2. Searchbar</h2>
-        <Searchbar initial="Alien" onSearch={console.log} />
-      </div>
-      <div>
-        <h2>3. GenreSelect: {selectedGenre}</h2>
-        <GenreSelect
-          genres={genres}
-          selected={selectedGenre}
-          onSelect={setSelectedGenre}
-        />
-      </div>
+      <header>
+        <h2>Find your movie</h2>
+        <Searchbar initial="" onSearch={handleSearch} className="search-bar" />
+      </header>
+      <article>
+        <div className="row">
+          <GenreSelect
+            genres={genres}
+            selected={selectedGenre}
+            onSelect={handleGenreSelect}
+            className="genre-select"
+          />
+          <SortControl
+            currentSelection={orderBy}
+            onChange={handleSortChange}
+            className="sort-control"
+          />
+        </div>
+        <div>
+          <MovieExplorer movies={orderedData} />
+        </div>
+      </article>
     </div>
   );
 }

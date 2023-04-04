@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.scss";
 
 export function Searchbar({ initial, onSearch }) {
   const [searchTerm, setSearchTerm] = useState(initial);
@@ -30,9 +31,11 @@ export function Searchbar({ initial, onSearch }) {
         data-testid="input"
         onChange={setQuery}
         onKeyDown={handleKeyDown}
+        className="search-box"
       />
       <button
         onClick={search}
+        className="search-button"
         data-testid="button">Search</button>
     </div>
   );

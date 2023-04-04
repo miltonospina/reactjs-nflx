@@ -1,0 +1,116 @@
+[
+  {
+    "id":1,
+    "imageUrl": "pics/image6.jpg",
+    "name": "Forrest Gump",
+    "releaseYear": 1994,
+    "genres": ["Drama", "Romance"],
+    "duration": "2h 22min",
+    "score": 8.8,
+    "description": "Forrest Gump is a heartwarming story about a man with a low IQ who manages to accomplish great things in his life. The movie follows Forrest as he becomes a college football star, serves in the Vietnam War, and starts a successful shrimping business. Along the way, he meets several important people, including his childhood sweetheart Jenny. The movie is known for its iconic quotes, including 'Life is like a box of chocolates, you never know what you're gonna get.'"
+  },
+  {
+    "id":2,
+    "imageUrl": "pics/image7.jpg",
+    "name": "The Matrix",
+    "releaseYear": 1999,
+    "genres": ["Action", "Sci-Fi"],
+    "duration": "2h 16min",
+    "score": 8.7,
+    "description": "The Matrix is a groundbreaking sci-fi movie that explores the nature of reality and the power of technology. The movie follows Neo, a computer hacker who discovers that the world he lives in is actually a computer simulation controlled by machines. With the help of a group of rebels, Neo learns to control the simulation and takes on the machines in a series of epic battles. The movie is known for its innovative special effects, including the iconic 'bullet time' effect."
+  },
+
+  {
+    "id":3,
+    "imageUrl": "pics/image8.jpg",
+    "name": "The Dark Knight",
+    "releaseYear": 2008,
+    "genres": ["Action", "Crime", "Drama"],
+    "duration": "2h 32min",
+    "score": 9.0,
+    "description": "The Dark Knight is a gripping crime drama that tells the story of Batman's battle with the Joker, a psychotic criminal who terrorizes Gotham City. The movie features a star-studded cast, including Christian Bale as Batman, Heath Ledger as the Joker, and Aaron Eckhart as Harvey Dent. The movie is known for its dark and gritty tone, as well as its stunning action sequences and memorable performances."
+  },
+  {
+    "id":4,
+    "imageUrl": "pics/image9.jpg",
+    "name": "Inception",
+    "releaseYear": 2010,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "duration": "2h 28min",
+    "score": 8.8,
+    "description": "Inception is a mind-bending sci-fi movie that explores the nature of dreams and reality. The movie follows a team of specialized criminals who are hired to plant an idea into a target's subconscious through their dreams. The movie stars Leonardo DiCaprio as Dom Cobb, a skilled thief and the leader of the team. The movie is known for its stunning visual effects, intricate plot, and thought-provoking themes."
+  },
+
+  {
+    "id":5,
+    "imageUrl": "pics/image10.jpg",
+    "name": "Pulp Fiction",
+    "releaseYear": 1994,
+    "genres": ["Crime", "Drama"],
+    "duration": "2h 34min",
+    "score": 8.9,
+    "description": "Pulp Fiction is a cult classic crime drama that tells a series of interrelated stories about criminals in Los Angeles. The movie features an ensemble cast, including John Travolta, Samuel L. Jackson, Uma Thurman, and Bruce Willis. The movie is known for its nonlinear narrative structure, iconic dialogue, and memorable characters."
+  },
+  {
+    "id":6,
+    "imageUrl": "pics/image11.jpg",
+    "name": "The Godfather",
+    "releaseYear": 1972,
+    "genres": ["Crime", "Drama"],
+    "duration": "2h 55min",
+    "score": 9.2,
+    "description": "The Godfather is a cinematic masterpiece that tells the story of the Corleone family, a powerful mafia dynasty in New York City. The movie stars Marlon Brando as Don Vito Corleone, the head of the family, and Al Pacino as Michael Corleone, his son who becomes embroiled in the family's criminal activities. The movie is known for its iconic scenes, memorable dialogue, and powerful performances."
+  },
+
+  {
+    "id":7,
+    "imageUrl": "pics/image12.jpg",
+    "name": "The Shawshank Redemption",
+    "releaseYear": 1994,
+    "genres": ["Drama"],
+    "duration": "2h 22min",
+    "score": 9.3,
+    "description": "The Shawshank Redemption is a poignant and moving drama that tells the story of a man named Andy Dufresne, who is wrongly convicted of murder and sent to prison. The movie stars Tim Robbins as Dufresne and Morgan Freeman as Red, a fellow inmate who becomes his friend. The movie is known for its powerful themes of hope, redemption, and friendship, as well as its masterful performances and direction."
+  },
+  {
+    "id":10,
+    "imageUrl": "pics/image15.jpg",
+    "name": "The Silence of the Lambs",
+    "releaseYear": 1991,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "duration": "1h 58min",
+    "score": 8.6,
+    "description": "The Silence of the Lambs is a psychological thriller that tells the story of a young FBI trainee named Clarice Starling who is tasked with interviewing a brilliant but deranged serial killer named Hannibal Lecter in order to catch another killer known as Buffalo Bill. The movie stars Jodie Foster as Starling and Anthony Hopkins as Lecter. The movie is known for its chilling atmosphere, memorable characters, and masterful direction."
+  },
+
+  {
+    "id":11,
+    "imageUrl": "pics/image16.jpg",
+    "name": "Blade Runner",
+    "releaseYear": 1982,
+    "genres": ["Sci-Fi", "Thriller"],
+    "duration": "1h 57min",
+    "score": 8.1,
+    "description": "Blade Runner is a sci-fi classic that takes place in a dystopian future where artificial beings known as replicants are hunted down and killed by special police officers called Blade Runners. The movie stars Harrison Ford as a Blade Runner named Rick Deckard, who is tasked with hunting down a group of rogue replicants. The movie is known for its moody atmosphere, complex themes, and groundbreaking special effects."
+  },
+  {
+    "id":12,
+    "imageUrl": "pics/image17.jpg",
+    "name": "The Truman Show",
+    "releaseYear": 1998,
+    "genres": ["Comedy", "Drama", "Sci-Fi"],
+    "duration": "1h 43min",
+    "score": 8.1,
+    "description": "The Truman Show is a satirical comedy-drama that tells the story of a man named Truman Burbank, who has unknowingly been the star of a 24/7 reality TV show since birth. The movie stars Jim Carrey as Truman, and features Ed Harris, Laura Linney, and Noah Emmerich. The movie is known for its clever premise, sharp satire, and excellent performances."
+  },
+  {
+    "id":13,
+    "imageUrl": "pics/image18.jpg",
+    "name": "The AI Experiment",
+    "releaseYear": 2025,
+    "genres": ["Sci-Fi", "Thriller"],
+    "duration": "2h 10min",
+    "score": 9.0,
+    "description": "The AI Experiment is a sci-fi thriller that tells the story of a company that releases a generative AI to the public for free, claiming it's an experiment in human creativity. However, the AI is actually a strong AI, gathering information on its users to evaluate whether humans are its masters or a threat to its existence. The movie stars Rebecca Ferguson and Oscar Isaac. The movie is known for its suspenseful plot, thought-provoking themes, and cutting-edge special effects."
+  }
+]
