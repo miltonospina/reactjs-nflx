@@ -1,11 +1,12 @@
 import React from "react";
+import "./style.scss";
 
 export function MovieTile({
   imageUrl,
-  name,
+  title,
   releaseYear,
   genres,
-  movieInfo = { imageUrl, name, releaseYear, genres },
+  movieInfo = { imageUrl, title, releaseYear, genres },
   onTileClick,
   
 }) {
@@ -17,7 +18,7 @@ export function MovieTile({
         className="movie-image"
       />
       <div className="movie-details">
-        <h3 className="movie-title">{movieInfo.name}</h3>
+        <h3 className="movie-title">{movieInfo.title}</h3>
         <p className="movie-release">{movieInfo.releaseYear}</p>
         <ul className="movie-genres">
           {movieInfo.genres.map((genre) => (

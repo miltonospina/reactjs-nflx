@@ -2,7 +2,7 @@
   {
     "id":1,
     "imageUrl": "pics/image6.jpg",
-    "name": "Forrest Gump",
+    "title": "Forrest Gump",
     "releaseYear": 1994,
     "genres": ["Drama", "Romance"],
     "duration": "2h 22min",
@@ -12,7 +12,7 @@
   {
     "id":2,
     "imageUrl": "pics/image7.jpg",
-    "name": "The Matrix",
+    "title": "The Matrix",
     "releaseYear": 1999,
     "genres": ["Action", "Sci-Fi"],
     "duration": "2h 16min",
@@ -23,7 +23,7 @@
   {
     "id":3,
     "imageUrl": "pics/image8.jpg",
-    "name": "The Dark Knight",
+    "title": "The Dark Knight",
     "releaseYear": 2008,
     "genres": ["Action", "Crime", "Drama"],
     "duration": "2h 32min",
@@ -33,7 +33,7 @@
   {
     "id":4,
     "imageUrl": "pics/image9.jpg",
-    "name": "Inception",
+    "title": "Inception",
     "releaseYear": 2010,
     "genres": ["Action", "Adventure", "Sci-Fi"],
     "duration": "2h 28min",
@@ -44,7 +44,7 @@
   {
     "id":5,
     "imageUrl": "pics/image10.jpg",
-    "name": "Pulp Fiction",
+    "title": "Pulp Fiction",
     "releaseYear": 1994,
     "genres": ["Crime", "Drama"],
     "duration": "2h 34min",
@@ -54,7 +54,7 @@
   {
     "id":6,
     "imageUrl": "pics/image11.jpg",
-    "name": "The Godfather",
+    "title": "The Godfather",
     "releaseYear": 1972,
     "genres": ["Crime", "Drama"],
     "duration": "2h 55min",
@@ -65,7 +65,7 @@
   {
     "id":7,
     "imageUrl": "pics/image12.jpg",
-    "name": "The Shawshank Redemption",
+    "title": "The Shawshank Redemption",
     "releaseYear": 1994,
     "genres": ["Drama"],
     "duration": "2h 22min",
@@ -75,7 +75,7 @@
   {
     "id":10,
     "imageUrl": "pics/image15.jpg",
-    "name": "The Silence of the Lambs",
+    "title": "The Silence of the Lambs",
     "releaseYear": 1991,
     "genres": ["Crime", "Drama", "Thriller"],
     "duration": "1h 58min",
@@ -86,7 +86,7 @@
   {
     "id":11,
     "imageUrl": "pics/image16.jpg",
-    "name": "Blade Runner",
+    "title": "Blade Runner",
     "releaseYear": 1982,
     "genres": ["Sci-Fi", "Thriller"],
     "duration": "1h 57min",
@@ -96,7 +96,7 @@
   {
     "id":12,
     "imageUrl": "pics/image17.jpg",
-    "name": "The Truman Show",
+    "title": "The Truman Show",
     "releaseYear": 1998,
     "genres": ["Comedy", "Drama", "Sci-Fi"],
     "duration": "1h 43min",
@@ -106,7 +106,7 @@
   {
     "id":13,
     "imageUrl": "pics/image18.jpg",
-    "name": "The AI Experiment",
+    "title": "The AI Experiment",
     "releaseYear": 2025,
     "genres": ["Sci-Fi", "Thriller"],
     "duration": "2h 10min",

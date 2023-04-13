@@ -6,7 +6,7 @@ export function SortControl({ currentSelection, onChange }) {
   };
 
   return (
-    <div>
+    <div className="sort-control">
       <label htmlFor="sort-select">Sort by</label>
       <select
         id="sort-select"

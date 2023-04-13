@@ -1,11 +1,16 @@
-li {
-  display: inline;
-  padding: 20px 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-li.selected {
-  font-weight: bold;
-  border-bottom: solid 2pt #F65261; 
-}
+.genre-select {
+    padding: 0;
+  }
+  
+  .genre-select li {
+    display: inline;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: solid 2pt #555;
+  }
+  .genre-select li.selected {
+    font-weight: bold;
+    border-bottom: solid 2pt #f65261;
+  }

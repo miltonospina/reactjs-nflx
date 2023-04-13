@@ -30,7 +30,7 @@ function App() {
 
   const orderedData = filteredData.sort((a, b) => {
     if (orderBy === "name") {
-      return a.name.localeCompare(b.name);
+      return a.title.localeCompare(b.title);
     } else if (orderBy === "releaseYear") {
       return a.releaseYear - b.releaseYear;
     } else {
@@ -62,13 +62,8 @@ function App() {
             genres={genres}
             selected={selectedGenre}
             onSelect={handleGenreSelect}
-            className="genre-select"
           />
-          <SortControl
-            currentSelection={orderBy}
-            onChange={handleSortChange}
-            className="sort-control"
-          />
+          <SortControl currentSelection={orderBy} onChange={handleSortChange} />
         </div>
         <div>
           <MovieExplorer movies={orderedData} />

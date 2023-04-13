@@ -8,7 +8,7 @@ export function GenreSelect({ genres, selected, onSelect }) {
     onSelect(choice);
   };
   return (
-    <ul>
+    <ul className="genre-select">
       {genres.map((genre) => (
         <li
           key={genre}
