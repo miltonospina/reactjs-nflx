@@ -2,6 +2,10 @@
   height: 486px;
 }
 
+.movie-image, .movie-title {
+  cursor: pointer;
+}
+
 .movie-genres {
   padding: 0;
   li {

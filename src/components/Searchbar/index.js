@@ -28,7 +28,7 @@ export function Searchbar({ initial, onSearch }) {
         aria-label="Search"
         placeholder={placeholder}
         value={searchTerm}
-        data-testid="input"
+        data-testid="search-bar-input"
         onChange={setQuery}
         onKeyDown={handleKeyDown}
         className="search-box"
@@ -36,7 +36,7 @@ export function Searchbar({ initial, onSearch }) {
       <button
         onClick={search}
         className="search-button"
-        data-testid="button">Search</button>
+        data-testid="search-bar-button">Search</button>
     </div>
   );
 }

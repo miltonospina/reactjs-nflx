@@ -1,0 +1,41 @@
+.sort-control select {
+  border: none;
+  background-color: #232323;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 30px;
+
+  -webkit-appearance: none;
+  appearance: none !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sort-control select:focus-visible {
+  border: none;
+}
+
+.sort-control select option {
+  border: none;
+  background-color: #232323;
+}
+
+.sort-control select option:hover {
+  background-color: #f65261;
+}
+
+.sort-control .sort-direction {
+  color: #f65261;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+.sort-control label {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

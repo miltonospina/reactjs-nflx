@@ -1,0 +1,43 @@
+.movie-details-row {
+  display: flex;
+  align-items: center; /* align items vertically in the center */
+  .movie-img {
+    flex: 0 0 auto; /* don't grow or shrink; use auto width */
+  }
+  .movie-info {
+    flex: 1 1 auto; /* grow and shrink equally; use auto width */
+    margin-left: 50px; /* add 50px of space to the left */
+    .movie-title {
+      h3 {
+        display: inline;
+        text-transform: uppercase;
+        padding-right: 25px;
+        font-weight: 300;
+        font-size: 40px;
+      }
+      .movie-rating {
+        border: solid thin #fff;
+        padding: 10px;
+        border-radius: 100%;
+      }
+    }
+    .movie-genres {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      span {
+        padding: 0 15px;
+      }
+    }
+
+    .movie-extra-info {
+      color: #f65261;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: capitalize;
+      .movie-runtime {
+        margin-left: 20px;
+      }
+    }
+  }
+}

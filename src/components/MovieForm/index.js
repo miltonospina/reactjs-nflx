@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.scss";
 
 const MovieForm = ({ initialMovie, onSubmit }) => {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState(initialMovie);
 
-  useEffect(() => {
-    setFormData(initialMovie || {});
-  }, [initialMovie]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;

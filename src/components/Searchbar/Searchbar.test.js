@@ -5,7 +5,7 @@ describe("Searchbar", () => {
     const initialValue = "predefined";
     render(<Searchbar initial={initialValue} />);
 
-    const value = screen.getByTestId("input").value;
+    const value = screen.getByTestId("search-bar-input").value;
     expect(value).toBe(initialValue);
   });
 
@@ -13,8 +13,8 @@ describe("Searchbar", () => {
     const spyCallback = jest.fn();
     const searchTerm = "Avengers";
     render(<Searchbar onSearch={spyCallback} />);
-    const inputElement = screen.getByTestId("input");
-    const buttonElement = screen.getByTestId("button");
+    const inputElement = screen.getByTestId("search-bar-input");
+    const buttonElement = screen.getByTestId("search-bar-button");
 
     fireEvent.change(inputElement, { target: { value: searchTerm } });
     fireEvent.click(buttonElement);
@@ -26,7 +26,7 @@ describe("Searchbar", () => {
     const spyCallback = jest.fn();
     const searchTerm = "Pokémon the movie";
     render(<Searchbar onSearch={spyCallback} />);
-    const inputElement = screen.getByTestId("input");
+    const inputElement = screen.getByTestId("search-bar-input");
 
     fireEvent.change(inputElement, { target: { value: searchTerm } });
     fireEvent.keyDown(inputElement, { key: "Enter", code: "Enter" });

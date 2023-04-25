@@ -5,7 +5,7 @@ import "./style.scss";
 function MovieExplorer({ movies }) {
   return (
     <>
-      <div className="movie-explorer grid-container">
+      <div className="movie-explorer grid-container" data-testid="search-results">
         {movies.map((movieInfo) => (
           <MovieTile key={movieInfo.id} movieInfo={movieInfo} className="grid-item"></MovieTile>
         ))}
